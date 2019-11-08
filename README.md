@@ -1,0 +1,1 @@
+# gatsby-i18n
