@@ -1,4 +1,4 @@
-# Using i18n
+# Gatsby i18n
 
 **forked from gatsby example [using-i18n](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n)**
 

@@ -20,4 +20,14 @@ module.exports = {
     defaultTitle: `i18n mit Gatsby nutzen`,
     defaultDescription: `Gatsby Beispielseite, die MDX und i18n (frei von dependencies) nutzt`,
   },
+  ru: {
+    path: `ru`,
+    locale: `ru-RU`,
+    dateFormat: `DD.MM.YYYY`,
+    siteLanguage: `ru`,
+    ogLanguage: `ru_RU`,
+    defaultTitle: `Использование i18n с Gatsby`,
+    defaultDescription: `Пример сайта на Gatsby с использованием MDX и i18n (без зависимостей)`,
+
+  }
 }

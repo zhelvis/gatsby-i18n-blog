@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import LocalizedLink from "./localizedLink"
+import LocaleSwitcher from "./localeSwitcher"
 import useTranslations from "./useTranslations"
 
 const Navigation = () => {
@@ -12,13 +12,17 @@ const Navigation = () => {
         Homepage
       </LocalizedLink>
       <div>
-        <Link to="/" hrefLang="en">
+        <LocaleSwitcher target="en">
           English
-        </Link>
+        </LocaleSwitcher>
         {` `}/{` `}
-        <Link to="/de" hrefLang="de">
+        <LocaleSwitcher target="ru">
+          Русский
+        </LocaleSwitcher>
+        {` `}/{` `}
+        <LocaleSwitcher target="de">
           Deutsch
-        </Link>
+        </LocaleSwitcher>
       </div>
     </nav>
   )
