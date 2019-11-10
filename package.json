@@ -11,14 +11,14 @@
     "start": "npm run develop"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^0.20.3",
-    "@mdx-js/tag": "^0.20.3",
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
     "@reach/router": "^1.2.1",
-    "gatsby": "^2.3.3",
-    "gatsby-mdx": "^0.4.4",
-    "gatsby-source-filesystem": "^2.0.28",
-    "gatsby-transformer-json": "^2.1.11",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "gatsby": "^2.17.10",
+    "gatsby-plugin-mdx": "^1.0.55",
+    "gatsby-source-filesystem": "^2.1.35",
+    "gatsby-transformer-json": "^2.2.16",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }
