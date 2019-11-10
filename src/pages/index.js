@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql } from "gatsby"
-import LocalizedLink from "../components/localizedLink"
-import useTranslations from "../components/useTranslations"
+import React from 'react'
+import { graphql } from 'gatsby'
+import LocalizedLink from '../components/localizedLink'
+import useTranslations from '../components/useTranslations'
 
 const Index = ({ data: { allMdx } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")

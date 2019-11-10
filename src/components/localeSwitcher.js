@@ -1,25 +1,24 @@
-import React from "react";
-import { Link } from "gatsby";
-import { Location } from "@reach/router";
-import locales from "../../config/i18n";
+import React from 'react'
+import { Link } from 'gatsby'
+import { Location } from '@reach/router'
+import locales from '../../config/i18n'
 
-const prefixList = Object.keys(locales).filter(el => !locales[el].default);
+const prefixList = Object.keys(locales).filter(el => !locales[el].default)
 
 const LocaleSwitcher = ({ target, ...props }) => {
-
   // Both functions returns path string w/o first slash
-  // the cause of the solution is gatsby Link component issues 
+  // the cause of the solution is gatsby Link component issues
   // https://github.com/gatsbyjs/gatsby/issues/11243
-  
+
   const getDefaultPath = path => {
-    let pathArr = path.split("/");
+    let pathArr = path.split('/')
     if (prefixList.includes(pathArr[1])) {
-      pathArr.splice(0, 2);
+      pathArr.splice(0, 2)
     } else {
-      pathArr.splice(0, 1);
+      pathArr.splice(0, 1)
     }
-    return pathArr.join("/");
-  };
+    return pathArr.join('/')
+  }
 
   const getTargetPath = path => {
     const to = getDefaultPath(path)
@@ -29,12 +28,12 @@ const LocaleSwitcher = ({ target, ...props }) => {
 
   return (
     <Location>
-      {({ location }) => {
-        console.log(getTargetPath(location.pathname))
-        return <Link {...props} to={`/${getTargetPath(location.pathname)}`} />;
-      }}
+      {({ location }) => (
+        <Link {...props} to={`/${getTargetPath(location.pathname)}`} />
+      )}
+      }
     </Location>
-  );
-};
+  )
+}
 
-export default LocaleSwitcher;
+export default LocaleSwitcher

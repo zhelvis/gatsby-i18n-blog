@@ -1,7 +1,7 @@
-import React from "react"
-import LocalizedLink from "./localizedLink"
-import LocaleSwitcher from "./localeSwitcher"
-import useTranslations from "./useTranslations"
+import React from 'react'
+import LocalizedLink from './localizedLink'
+import LocaleSwitcher from './localeSwitcher'
+import useTranslations from './useTranslations'
 
 const Navigation = () => {
   const { backToHome } = useTranslations()
@@ -12,17 +12,11 @@ const Navigation = () => {
         Homepage
       </LocalizedLink>
       <div>
-        <LocaleSwitcher target="en">
-          English
-        </LocaleSwitcher>
+        <LocaleSwitcher target="en">English</LocaleSwitcher>
         {` `}/{` `}
-        <LocaleSwitcher target="ru">
-          Русский
-        </LocaleSwitcher>
+        <LocaleSwitcher target="ru">Русский</LocaleSwitcher>
         {` `}/{` `}
-        <LocaleSwitcher target="de">
-          Deutsch
-        </LocaleSwitcher>
+        <LocaleSwitcher target="de">Deutsch</LocaleSwitcher>
       </div>
     </nav>
   )

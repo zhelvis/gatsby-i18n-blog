@@ -1,6 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from 'react'
+import { graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 // The normal <a> tag is modified here (so that internal links use gatsby-link/LocalizedLink
 // More info:
@@ -8,9 +8,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 const Post = ({ data: { mdx } }) => (
   <div className="blogpost">
     <h1>{mdx.frontmatter.title}</h1>
-    <MDXRenderer>
-      {mdx.body}
-    </MDXRenderer>
+    <MDXRenderer>{mdx.body}</MDXRenderer>
   </div>
 )
 
