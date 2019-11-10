@@ -10,3 +10,8 @@ The general information are defined in `config/i18n.js`, the translations are lo
 
 - Usage of a custom hook with GraphQL to access translations. That part can be replaced with a i18n library
 - Blogposts are defined in `blog`. The folder names are the `slug` of the page. Inside these folders there has to be an `index.mdx` file (for the default language). Any other language needs to be defined in the format `name-with-dashes.lang.mdx`
+
+## Аdded features
+
+- Added `LocaleSwitcher` component
+- migrated from gatsby-mdx to gatsby-plugin-mdx

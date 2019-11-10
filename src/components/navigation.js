@@ -1,6 +1,6 @@
 import React from "react"
 import LocalizedLink from "./localizedLink"
-import LocaleSwitcher from "./localeSwitcher"
+import LocaleSwitcher from "./LocaleSwitcher"
 import useTranslations from "./useTranslations"
 
 const Navigation = () => {
