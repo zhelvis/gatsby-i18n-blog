@@ -31,7 +31,6 @@ const LocaleSwitcher = ({ target, ...props }) => {
       {({ location }) => (
         <Link {...props} to={`/${getTargetPath(location.pathname)}`} />
       )}
-      }
     </Location>
   )
 }
