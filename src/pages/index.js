@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import LocalizedLink from '../components/localizedLink'
+import SEO from '../components/seo'
 import useTranslations from '../components/useTranslations'
 
 const Index = ({ data: { allMdx } }) => {
@@ -10,6 +11,7 @@ const Index = ({ data: { allMdx } }) => {
 
   return (
     <>
+      <SEO />
       <h1>{hello}</h1>
       <p>{subline}</p>
       <hr style={{ margin: `2rem 0` }} />

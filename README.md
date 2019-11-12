@@ -14,4 +14,5 @@ The general information are defined in `config/i18n.js`, the translations are lo
 ## Аdded features
 
 - Added `LocaleSwitcher` component
+- Added SEO provided by react-hemlet
 - migrated from gatsby-mdx to gatsby-plugin-mdx

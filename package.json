@@ -1,8 +1,8 @@
 {
-  "name": "using-i18n",
+  "name": "gatsby-i18n",
   "private": true,
   "description": "Gatsby example site using MDX and dependency-free i18n",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Vladimir Zhelvis",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -17,10 +17,12 @@
     "@reach/router": "^1.2.1",
     "gatsby": "^2.17.10",
     "gatsby-plugin-mdx": "^1.0.55",
+    "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-json": "^2.2.16",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "husky": "^3.0.9",

@@ -4,17 +4,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/config/translations`,
-        name: `translations`
-      }
+        name: `translations`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/blog`,
-        name: `blog`
-      }
+        name: `blog`,
+      },
     },
     `gatsby-plugin-mdx`,
-    `gatsby-transformer-json`
-  ]
-};
+    `gatsby-transformer-json`,
+    `gatsby-plugin-react-helmet`,
+  ],
+}
