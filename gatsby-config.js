@@ -14,7 +14,13 @@ module.exports = {
         name: `blog`,
       },
     },
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        remarkPlugins: [require(`remark-math`)],
+        rehypePlugins: [require(`rehype-katex`)],
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`,
   ],

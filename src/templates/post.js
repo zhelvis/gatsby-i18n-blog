@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
+require(`katex/dist/katex.min.css`)
+
 import SEO from '../components/seo'
 
 const Post = ({ data: { mdx } }) => (
